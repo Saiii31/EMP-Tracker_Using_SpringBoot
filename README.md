@@ -1,7 +1,8 @@
 # EMP-Tracker_Using_SpringBoot
 
 ## Overview
-Emp-Tracker System is a full-stack Employee Management System that improves HR workflow efficiency by 40%. It provides role-based access control for over 100 users and supports CRUD operations along with real-time performance tracking.
+Emp-Tracker System is a full-stack Employee Management System that improved HR workflow efficiency, by managing 100+ employees.
+We have also Developed CRUD operations so that i would get easier to manage employees for HR
 
 ## Tech Stack
 - **Frontend:** HTML, CSS, JavaScript, ReactJS
