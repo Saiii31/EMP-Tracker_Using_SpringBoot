@@ -1,0 +1,150 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the entire page */
+div {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Add Employee Button */
+.add-button {
+    background-color: #1c1657;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.add-button:hover {
+    background-color: #3e3b41;
+}
+
+.add-button svg {
+    margin-right: 8px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #0c1442;
+    color: white;
+    font-weight: bold;
+    justify-content: space-between;
+    
+
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Action Buttons inside table */
+button {
+    padding: 10px 20px;
+    /* margin-right: 2px; */
+    border: none;
+    border-radius: 5px;
+    /* gap: px; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    display: inline-block;
+  
+}
+.btnalign{
+  display: inline-flex;
+  gap: 1px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; 
+}
+
+button:disabled {
+    background-color: #bdbdbd;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #46494d;
+    color: white;
+}
+
+button svg {
+    margin-right: 8px;
+}
+.edit-button {
+    background-color: #94cc39;
+    color: white;
+}
+
+.edit-button:hover:not(:disabled) {
+    background-color: #1d8712;
+}
+/* Delete Button Style */
+.delete-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-button:hover:not(:disabled) {
+    background-color: #410f0e;
+}
+
+/* Toast Notification Styles */
+.Toastify__toast {
+    border-radius: 6px;
+    font-family: 'Arial', sans-serif;
+}
+
+.Toastify__toast--success {
+    background-color: #4CAF50;
+}
+
+.Toastify__toast--error {
+    background-color: #f44336;
+}
+
+.Toastify__toast--info {
+    background-color: #2196F3;
+}
