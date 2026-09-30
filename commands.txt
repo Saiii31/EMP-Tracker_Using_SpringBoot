@@ -1,0 +1,225 @@
+========================================
+EMP TRACKER - SETUP & RUN COMMANDS
+========================================
+
+PROJECT:
+EMP Tracker - Spring Boot + ReactJS + MySQL
+
+
+========================================
+1. CHECK REQUIREMENTS
+========================================
+
+Check Java:
+java -version
+
+Check Node.js:
+node -v
+
+Check npm:
+npm -v
+
+Check Maven:
+mvn -version
+
+If Maven is not installed, use the Maven Wrapper:
+.\mvnw.cmd -version
+
+
+========================================
+2. CLONE PROJECT
+========================================
+
+git clone https://github.com/Saiii31/EMP-Tracker_Using_SpringBoot.git
+
+cd EMP-Tracker_Using_SpringBoot
+
+
+========================================
+3. DATABASE - MYSQL
+========================================
+
+Start MySQL.
+
+Create the database:
+
+CREATE DATABASE emp_tracker_db;
+
+Check databases:
+
+SHOW DATABASES;
+
+
+========================================
+4. CONFIGURE DATABASE
+========================================
+
+Open:
+
+src/main/resources/application.properties
+
+Configure:
+
+spring.datasource.url=jdbc:mysql://localhost:3306/emp_tracker_db
+spring.datasource.username=root
+spring.datasource.password=YOUR_PASSWORD
+
+
+========================================
+5. BUILD SPRING BOOT BACKEND
+========================================
+
+If Maven is installed:
+
+mvn clean install
+
+If Maven is NOT installed:
+
+.\mvnw.cmd clean install
+
+
+========================================
+6. RUN SPRING BOOT BACKEND
+========================================
+
+If Maven is installed:
+
+mvn spring-boot:run
+
+Without Maven:
+
+.\mvnw.cmd spring-boot:run
+
+
+========================================
+7. BACKEND
+========================================
+
+Spring Boot runs on:
+
+http://localhost:8080
+
+Embedded server:
+
+Apache Tomcat
+
+
+========================================
+8. FRONTEND
+========================================
+
+Open a NEW terminal.
+
+Go to the frontend/project directory.
+
+Install dependencies:
+
+npm install
+
+Start React:
+
+npm start
+
+
+========================================
+9. FRONTEND
+========================================
+
+React usually runs on:
+
+http://localhost:3000
+
+
+========================================
+10. FULL APPLICATION
+========================================
+
+Frontend:
+
+http://localhost:3000
+
+        |
+        | REST API
+        ↓
+
+Spring Boot:
+
+http://localhost:8080
+
+        |
+        | JPA / Hibernate / JDBC
+        ↓
+
+MySQL:
+
+localhost:3306
+
+Database:
+
+emp_tracker_db
+
+
+========================================
+11. STOP APPLICATION
+========================================
+
+Spring Boot:
+
+Press Ctrl + C
+
+React:
+
+Press Ctrl + C
+
+
+========================================
+12. CLEAN BUILD
+========================================
+
+Maven:
+
+mvn clean
+
+or:
+
+.\mvnw.cmd clean
+
+
+========================================
+13. REBUILD
+========================================
+
+mvn clean install
+
+or:
+
+.\mvnw.cmd clean install
+
+
+========================================
+14. GIT COMMANDS
+========================================
+
+Check status:
+
+git status
+
+Pull latest changes:
+
+git pull
+
+Create branch:
+
+git checkout -b feature-name
+
+Add changes:
+
+git add .
+
+Commit:
+
+git commit -m "Update employee management functionality"
+
+Push:
+
+git push origin feature-name

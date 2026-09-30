@@ -1,0 +1,24 @@
+# Runtime Requirements
+
+Java JDK 17+
+Node.js 18+
+npm 9+
+MySQL 8.0+
+
+# Backend
+Spring Boot 3.4.0
+Spring Data JPA
+Hibernate
+MySQL Connector/J
+Lombok
+
+# Frontend
+ReactJS
+Bootstrap 5.3.3
+React Toastify 10.0.6
+
+# Build Tool
+Maven (or Maven Wrapper: mvnw.cmd)
+
+# Server
+Embedded Apache Tomcat
